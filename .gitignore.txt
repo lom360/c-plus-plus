@@ -1,5 +1,5 @@
-*.sln
-*.vcxproj
-*.vcxproj.filters
-*.vcxproj.user
-/.vs/algorithms/v15
+**/.sln
+**/.vcxproj
+**/.vcxproj.filters
+**/.vcxproj.user
+**/.vs/algorithms/v15
