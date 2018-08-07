@@ -27,15 +27,13 @@ void PrintArray(int arr[]) {
 
 // This insertion sort will work as if there is a sorted list
 // and an unsorted list. Every ITEM before index 'i' should already
-// be sorted. ITEMS starting at index 'i' represents an unsorted list.
+// be sorted. ITEMS on and after index 'i' represents an unsorted list.
 void InsertionSort(int arr[]) {
 	for (int i = 1; i < SIZE; i++) {
-		for (int j = i; j >= 0; j--) {// Loops down to compare values.
-			int key = arr[j];
-			if (arr[j] < arr[j - 1]) { // If the HEAD of unsorted list is less than
-				arr[j] = arr[j - 1];   // the ITEM before it then swap values.
-				arr[j - 1] = key;
-			}
+		int key = arr[i]; // Keeps track of where the unsorted list starts
+		for (int j = i; j >= 0 && arr[j] < arr[j - 1]; j--) {// Loops down swapping values
+			arr[j] = arr[j - 1];                             // if value at 'j' index is less
+			arr[j - 1] = key;                                // then value at 'j - 1'.
 		}
 	}
 }
