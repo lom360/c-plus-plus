@@ -18,8 +18,10 @@ int main()
 
 void Merge(int arr[], int left, int mid, int right)
 {
-    const int leftSize = mid - 1;
-    const int rightSize = right - mid;
+    int i = 0;
+    int j = right - mid;
+    const int leftSize = i;
+    const int rightSize = j;
     int leftArray[leftSize];
     int rightArray[rightSize];
 
