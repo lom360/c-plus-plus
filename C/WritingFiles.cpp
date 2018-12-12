@@ -5,7 +5,7 @@ int main() {
 
 	// The three most common file modes: r, w, a.
 	// Which stands for read, write and append respectively.
-	FILE *fpointer = fopen("emplyees.txt", "w"); // Write will write to files but will also override anything in the file.
+	FILE *fpointer = fopen("employees.txt", "w"); // Write will write to files but will also override anything in the file.
 
 	fprintf(fpointer, "Jim, Salesman\nPam, Receptionist\nOscar, Accounting");
 
